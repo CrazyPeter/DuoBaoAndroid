@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/div_view_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/index_padding"
+                android:paddingTop="@dimen/index_padding">
+
+                <TextView
+                    android:id="@+id/index_kind"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_index_tab_kind"
+                    android:gravity="center_horizontal"
+                    android:text="@string/index_kind"
+                    android:textSize="@dimen/index_tab_text_size" />
+
+                <TextView
+                    android:id="@+id/index_ten"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_index_tab_ten"
+                    android:gravity="center_horizontal"
+                    android:text="@string/index_ten"
+                    android:textSize="@dimen/index_tab_text_size" />
+
+                <TextView
+                    android:id="@+id/index_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_index_tab_share"
+                    android:gravity="center_horizontal"
+                    android:text="@string/index_share"
+                    android:textSize="@dimen/index_tab_text_size" />
+
+                <TextView
+                    android:id="@+id/index_qa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_index_tab_qa"
+                    android:gravity="center_horizontal"
+                    android:text="@string/index_qa"
+                    android:textSize="@dimen/index_tab_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/div_view_bg" />
+
+            <com.fozoto.duobao.view.MyGridView
+                android:id="@+id/home_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="100dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp">
+
+            </com.fozoto.duobao.view.MyGridView>
+
+        </LinearLayout>
+
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshGridView-->
+    <!--xmlns:ptr="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/home_grid"-->
+    <!--android:numColumns="2"-->
+    <!--android:verticalSpacing="1dp"-->
+    <!--android:horizontalSpacing="1dp"-->
+    <!--android:columnWidth="100dp"-->
+    <!--android:stretchMode="columnWidth"-->
+    <!--ptr:ptrMode="pullFromEnd">-->
+
+    <!--</com.handmark.pulltorefresh.library.PullToRefreshGridView>-->
+
+</LinearLayout>

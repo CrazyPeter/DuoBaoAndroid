@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_above="@+id/bottom_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@id/bottom_navigator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navi_height"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            android:drawableTop="@drawable/tab_home"
+            android:text="@string/tab_home"
+            android:textColor="@drawable/tab_text"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/tab_win"
+            android:drawableTop="@drawable/tab_win"
+            android:textColor="@drawable/tab_text"
+            android:text="@string/tab_win"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/tab_find"
+            android:drawableTop="@drawable/tab_find"
+            android:textColor="@drawable/tab_text"
+            android:text="@string/tab_find"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/tab_cart"
+            android:drawableTop="@drawable/tab_cart"
+            android:textColor="@drawable/tab_text"
+            android:text="@string/tab_cart"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/tab_user"
+            android:drawableTop="@drawable/tab_user"
+            android:textColor="@drawable/tab_text"
+            android:text="@string/tab_user"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+</RelativeLayout>

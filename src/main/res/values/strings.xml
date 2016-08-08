@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">一元夺宝</string>
+
+    <string name="tab_home">夺宝</string>
+    <string name="tab_win">最新揭晓</string>
+    <string name="tab_find">发现</string>
+    <string name="tab_cart">清单</string>
+    <string name="tab_user">我的</string>
+
+    <string name="index_kind">分类</string>
+    <string name="index_ten">10元专区</string>
+    <string name="index_share">晒单</string>
+    <string name="index_qa">常见问题</string>
+
+</resources>
