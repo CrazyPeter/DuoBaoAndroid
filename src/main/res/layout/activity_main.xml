@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/content_container"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
         android:layout_above="@+id/bottom_navigator"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </FrameLayout>
+    </android.support.v4.view.ViewPager>
 
     <RadioGroup
         android:id="@id/bottom_navigator"
@@ -20,57 +20,32 @@
 
         <RadioButton
             android:id="@+id/tab_home"
+            style="@style/radio_button_style"
             android:drawableTop="@drawable/tab_home"
-            android:text="@string/tab_home"
-            android:textColor="@drawable/tab_text"
-            android:gravity="center_horizontal"
-            android:button="@null"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:text="@string/tab_home" />
 
         <RadioButton
             android:id="@+id/tab_win"
+            style="@style/radio_button_style"
             android:drawableTop="@drawable/tab_win"
-            android:textColor="@drawable/tab_text"
-            android:text="@string/tab_win"
-            android:gravity="center_horizontal"
-            android:button="@null"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:text="@string/tab_win" />
 
         <RadioButton
             android:id="@+id/tab_find"
+            style="@style/radio_button_style"
             android:drawableTop="@drawable/tab_find"
-            android:textColor="@drawable/tab_text"
-            android:text="@string/tab_find"
-            android:gravity="center_horizontal"
-            android:button="@null"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:text="@string/tab_find" />
 
         <RadioButton
             android:id="@+id/tab_cart"
+            style="@style/radio_button_style"
             android:drawableTop="@drawable/tab_cart"
-            android:textColor="@drawable/tab_text"
-            android:text="@string/tab_cart"
-            android:gravity="center_horizontal"
-            android:button="@null"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:text="@string/tab_cart" />
 
         <RadioButton
             android:id="@+id/tab_user"
+            style="@style/radio_button_style"
             android:drawableTop="@drawable/tab_user"
-            android:textColor="@drawable/tab_text"
-            android:text="@string/tab_user"
-            android:gravity="center_horizontal"
-            android:button="@null"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:text="@string/tab_user" />
     </RadioGroup>
 </RelativeLayout>

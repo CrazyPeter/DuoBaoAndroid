@@ -1,4 +1,4 @@
-package com.fozoto.duobao.entity;
+package com.fozoto.duobao.bean;
 
 import java.io.Serializable;
 import java.util.List;

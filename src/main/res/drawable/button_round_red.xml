@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/duobao_red" />
+            <stroke android:color="@color/duobao_red_border" android:width="1dp" />
+            <corners android:radius="@dimen/buton_round_corner_radius" />
+        </shape>
+    </item>
+</selector>

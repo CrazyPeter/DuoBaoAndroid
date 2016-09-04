@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/my"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/my_background"
+        android:textSize="@dimen/text_size_18_sp"
+        android:text="@string/tab_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:id="@+id/my_div"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/my"
+        android:background="@color/div_view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/userZone"
+        android:layout_below="@id/my_div"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/UserImage"
+            android:src="@mipmap/ic_login_user"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/user"
+            android:hint="@string/user_hint"
+            android:layout_toRightOf="@id/UserImage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pwdZone"
+        android:layout_below="@id/userZone"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/PwdImage"
+            android:src="@mipmap/ic_login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:hint="@string/pwd_hint"
+            android:layout_toRightOf="@id/PwdImage"
+            android:layout_toLeftOf="@+id/forget_password"
+            android:layout_alignTop="@id/PwdImage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@id/forget_password"
+            android:layout_alignParentRight="true"
+            android:text="@string/forget_password"
+            android:gravity="center_vertical"
+            android:layout_width="70dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@id/pwdZone"
+        android:textSize="@dimen/text_size_22_sp"
+        android:background="@drawable/button_round_red"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</RelativeLayout>

@@ -14,11 +14,12 @@ import android.widget.TextView;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
-import com.fozoto.duobao.app.DuobaoApplication;
 import com.fozoto.duobao.R;
+import com.fozoto.duobao.app.DuobaoApplication;
 import com.fozoto.duobao.utils.LogUtil;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by qingyan on 16-8-3.
@@ -27,14 +28,14 @@ import java.util.ArrayList;
 public abstract class MyAdapter<T> extends BaseAdapter {
     private final String TAG = "MyAdapter";
 
-    private ArrayList<T> mData;
+    private List<T> mData;
     private int mLayoutRes;           //布局id
 
 
     public MyAdapter() {
     }
 
-    public MyAdapter(ArrayList<T> mData, int mLayoutRes) {
+    public MyAdapter(List<T> mData, int mLayoutRes) {
         this.mData = mData;
         this.mLayoutRes = mLayoutRes;
     }

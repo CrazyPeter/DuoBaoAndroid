@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/goods_trait"
+        android:visibility="visible"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <ImageView
+        android:id="@+id/goods_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goods_intro"
+            android:lines="2"
+            android:textSize="@dimen/text_size_12_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/show"
+                android:text="@string/much_degree"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_12_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/goods_progress"
+                android:layout_toRightOf="@id/show"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_12_sp"
+                android:layout_alignTop="@id/show"
+                android:layout_width="35dp"
+                android:layout_height="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_below="@id/show"
+                android:layout_width="80dp"
+                android:layout_height="4dp" />
+
+            <TextView
+                android:id="@+id/add_cart"
+                android:layout_toRightOf="@id/progress_bar"
+                android:text="@string/add_cart"
+                android:background="@drawable/button_round_white"
+                android:textSize="@dimen/text_size_12_sp"
+                android:textColor="@color/tab_text_red"
+                android:padding="5dp"
+                android:clickable="true"
+                android:layout_alignTop="@id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/div_view_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"/>
+</RelativeLayout>

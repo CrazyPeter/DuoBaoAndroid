@@ -6,16 +6,18 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.fozoto.duobao.R;
 import com.fozoto.duobao.utils.LogUtil;
 
 /**
- * Created by qingyan on 16-8-8.
+ * Created by qingyan on 16-8-26.
  */
 
-public class WinFragment extends Fragment {
-    private final static String TAG = "WinFragment";
+public class LoginFragment extends Fragment {
+    private final static String TAG = "LoginFragment";
+    private EditText user, pwd;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,9 @@ public class WinFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         LogUtil.d(TAG, "进入了onCreateView");
-        View view = inflater.inflate(R.layout.frag_win, container, false);
+        View view = inflater.inflate(R.layout.frag_login, container, false);
+        user = (EditText) view.findViewById(R.id.user);
+        pwd = (EditText) view.findViewById(R.id.pwd);
         return view;
     }
 
